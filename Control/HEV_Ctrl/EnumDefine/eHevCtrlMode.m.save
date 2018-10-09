@@ -1,0 +1,14 @@
+classdef eHevCtrlMode < Simulink.IntEnumType
+  enumeration
+    Standby(0)
+    Assist(2)
+    EngineStart(3)
+    RegenBrake(4)
+    ReCharge(5)
+  end
+  methods (Static)
+    function retVal = getDefaultValue()
+      retVal = eHevCtrlMode.Standby;
+    end
+  end
+end 

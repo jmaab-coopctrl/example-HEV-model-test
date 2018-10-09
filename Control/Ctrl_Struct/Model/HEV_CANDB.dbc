@@ -1,0 +1,134 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Gateway Radar NAVI VM_Ctrl BrakeCtrl SteerCtrl HVAC_Ctrl BodyCtrl HEV_Ctrl EnginCtrl TransmCtrl MotorCtrl BatteryCtrl
+
+
+BO_ 3221225472 VECTOR__INDEPENDENT_SIG_MSG: 0 Vector__XXX
+ SG_ NewSignal_0007 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ NewSignal_0011 : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2365583496 Gateway_InfoCAN_Tx: 8 Gateway
+ SG_ BrkCtrl_Vehicle_speed_G1 : 0|16@1+ (0.1,0) [0|180] "km/h" Vector__XXX
+
+BO_ 2365522048 Radar_InfoCAN_Tx: 8 Radar
+ SG_ Radar_Relative_distance : 0|16@1+ (0.01,0) [0|500] "m" Vector__XXX
+ SG_ Radar_Relative_velocity : 16|16@1- (0.01,0) [-50|50] "m/s" Vector__XXX
+
+BO_ 2365567004 NAVI_InfoCAN_Tx: 8 NAVI
+ SG_ NAVI_Road_information : 0|16@1+ (1,0) [0|65535] "" Vector__XXX
+ SG_ NAVI_Home_around_status : 16|16@1+ (1,0) [0|65535] "" Vector__XXX
+
+BO_ 2365575302 VM_Ctrl_VehCAN_Tx: 8 VM_Ctrl
+ SG_ VMCtrl_PropTorqCmnd : 8|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+ SG_ VMCtrl_BrakeTorqCmnd : 32|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+ SG_ VMCtrl_BrakeTorqStatus : 24|8@1+ (1,0) [0|7] "-" Vector__XXX
+ SG_ VMCtrl_PropTorqStatus : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 2365546507 BrakeCtrl_VehCAN_Tx: 8 BrakeCtrl
+ SG_ BrkCtrl_Vehicle_speed : 0|16@1+ (0.1,0) [0|180] "km/h" Vector__XXX
+ SG_ BrkCtrl_Regen_brake_torque_reque : 16|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+
+BO_ 2365550611 SteerCtrl_VehCAN_Tx: 8 SteerCtrl
+ SG_ StrgCtrl_Steer_angle : 0|16@1- (0.03125,0) [-720|720] "deg" Vector__XXX
+
+BO_ 2365579399 HVAC_Ctrl_VehCAN_Tx: 8 HVAC_Ctrl
+ SG_ HVAC_Ctrl_Idlestop_enbl : 0|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HVAC_Ctrl_Idlestop_cancel : 1|1@1+ (1,0) [0|1] "-" Vector__XXX
+
+BO_ 2365562920 BodyCtrl_VehCAN_Tx: 8 BodyCtrl
+ SG_ BdyCtrl_Idlestop_cancel : 0|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ BdyCtrl_Engine_hood_open_flag : 1|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ BdyCtrl_Door_open_flag : 1|1@1+ (1,0) [0|1] "-" Vector__XXX
+
+BO_ 2365530242 HEV_Ctrl_PwtrCAN_Tx_1: 8 HEV_Ctrl
+ SG_ HEVCtrl_Engine_torque_request : 0|16@1- (0.015625,0) [-300|300] "N*m" Vector__XXX
+ SG_ HEVCtrl_Motor_torque_request : 16|16@1- (0.015625,0) [-300|300] "N*m" Vector__XXX
+ SG_ HEVCtrl_Regen_brake_torque_avail : 32|16@1- (0.0625,0) [-300|3000] "N*m" Vector__XXX
+ SG_ HEVCtrl_Regen_brake_torque_actua : 48|16@1- (0.0625,0) [-300|3000] "N*m" Vector__XXX
+
+BO_ 2365530498 HEV_Ctrl_PwtrCAN_Tx_2: 8 HEV_Ctrl
+ SG_ HEV_IdleStopCtrl_preparation_req : 0|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HEV_IdleStopCtrl_request : 1|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HEV_IdleStopCtrl_status : 2|1@1+ (1,0) [0|1] "-" Vector__XXX
+
+BO_ 2365534208 EngineCtrl_PwtrCAN_Tx: 8 EnginCtrl
+ SG_ EngCtrl_Engine_speed : 0|16@1+ (0.125,0) [0|8192] "rpm" Vector__XXX
+ SG_ EngCtrl_Engine_torque_actual : 16|16@1- (0.015625,0) [-300|300] "N*m" Vector__XXX
+
+BO_ 2365538307 TransmCtrl_PwtrCAN_Tx: 8 TransmCtrl
+ SG_ TmCtrl_Clutch_position : 0|8@1+ (0.01,0) [0|1] "-" Vector__XXX
+ SG_ TmCtrl_Gear_position : 8|8@1+ (1,0) [0|5] "-" Vector__XXX
+
+BO_ 2365542531 MotorCtrl_PwtrCAN_Tx: 8 MotorCtrl
+ SG_ MtrCtrl_Motor_torque_actual : 0|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+ SG_ MtrCtrl_Motor_torque_available : 16|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+ SG_ MtrCtrl_Motor_regen_torque_avail : 32|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+
+BO_ 2365554820 BatteryCtrl_PwtrCAN_Tx: 8 BatteryCtrl
+ SG_ BatCtrl_SOC : 0|16@1+ (0.00390625,0) [0|100] "%" Vector__XXX
+
+BO_ 2365571205 Gateway_VehCAN_Tx_1: 8 Gateway
+ SG_ Radar_Relative_distance_G : 0|16@1+ (0.01,0) [0|500] "m" Vector__XXX
+ SG_ Radar_Relative_velocity_G : 16|16@1- (0.01,0) [-50|50] "m/s" Vector__XXX
+ SG_ HEVCtrl_Regen_brake_torque_ave_G : 32|16@1- (0.0625,0) [-300|3000] "N*m" Vector__XXX
+ SG_ HEVCtrl_Regen_brake_torque_act_G : 48|16@1- (0.0625,0) [-300|3000] "N*m" Vector__XXX
+
+BO_ 2365571461 Gateway_VehCAN_Tx_2: 8 Gateway
+ SG_ EngCtrl_Engine_speed_G : 0|16@1+ (0.125,0) [0|8192] "rpm" Vector__XXX
+ SG_ TmCtrl_Gear_position_G : 16|8@1+ (1,0) [0|5] "-" Vector__XXX
+ SG_ HEV_IdleStopCtrl_preparation_r_G : 24|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HEV_IdleStopCtrl_request_G : 25|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HEV_IdleStopCtrl_status_G : 26|1@1+ (1,0) [0|1] "-" Vector__XXX
+
+BO_ 2365571717 Gateway_PwtrCAN_Tx_1: 8 Gateway
+ SG_ NAVI_Home_around_status_G : 0|16@1+ (1,0) [0|65535] "-" Vector__XXX
+ SG_ VMCtrl_PropTorqStatus_G : 16|8@1+ (1,0) [0|7] "-" Vector__XXX
+ SG_ VMCtrl_PropTorqCmnd_G : 24|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+
+BO_ 2365571973 Gateway_PwtrCAN_Tx_2: 8 Gateway
+ SG_ BrkCtrl_Vehicle_speed_G : 0|16@1+ (0.1,0) [0|180] "km/h" Vector__XXX
+ SG_ BrkCtrl_Regen_brake_torque_re_G : 16|16@1- (0.01,0) [-300|300] "N*m" Vector__XXX
+ SG_ StrgCtrl_Steer_angle_G : 32|16@1- (0.03125,0) [-720|720] "deg" Vector__XXX
+ SG_ HVAC_Ctrl_Idlestop_enbl_G : 56|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ HVAC_Ctrl_Idlestop_cancel_G : 57|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ BdyCtrl_Idlestop_cancel_G : 58|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ BdyCtrl_Engine_hood_open_flg_G : 59|1@1+ (1,0) [0|1] "-" Vector__XXX
+ SG_ BdyCtrl_Door_open_flag_G : 60|1@1+ (1,0) [0|1] "-" Vector__XXX
+
+
+
+CM_ BO_ 2365583496 "";
+

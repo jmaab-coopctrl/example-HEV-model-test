@@ -1,0 +1,13 @@
+classdef eIdleStopCtrlMode < Simulink.IntEnumType
+  enumeration
+    IdleStop(0)
+    EngineStart(1)
+    IdleStopWait(2)
+    EngineRun(4)
+  end
+  methods (Static)
+    function retVal = getDefaultValue()
+      retVal = eIdleStopCtrlMode.EngineRun;
+    end
+  end
+end 
