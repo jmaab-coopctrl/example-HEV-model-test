@@ -23,12 +23,13 @@ CtrlStructType=2;
 %CtrlStructType=3;
 %CtrlStructType=4;
 
+VarObj_CanType_Simpl=Simulink.Variant('CAN_model_type==0');
 VarObj_CanType_Simpl_TW=Simulink.Variant('CAN_model_type==1');
-VarObj_CanType_Simpl=Simulink.Variant('CAN_model_type==2');
-VarObj_CanType_VNT_Level_1=Simulink.Variant('CAN_model_type==3');
-VarObj_CanType_VNT_Level_2=Simulink.Variant('CAN_model_type==4');
-VarObj_CanType_VNT_CANoe=Simulink.Variant('CAN_model_type==5');
+VarObj_CanType_VNT_Level_1=Simulink.Variant('CAN_model_type==2');
+VarObj_CanType_VNT_Level_2=Simulink.Variant('CAN_model_type==3');
+VarObj_CanType_VNT_CANoe=Simulink.Variant('CAN_model_type==4');
 
+%CAN_model_type=0;
 %CAN_model_type=1;
 CAN_model_type=2;
 %CAN_model_type=3;
@@ -42,8 +43,8 @@ VarObj_Eng_MvMdl =Simulink.Variant('EngEcuType==2');
 
 EngEcuType=1;
 
-% Vehicle Network ToolboxのTransmit/Receiveブロックを使った詳細CANモデルの選択時
-%制御骨格モデルのコールバックPreLoad関数を実行する。
+% 　Vehicle Network ToolboxのTransmit/Receiveブロックを使った詳細CANモデルを
+%　初期状態で選択時、制御骨格モデルのコールバックPreLoad関数を実行する。
 if CtrlStructType==3
     CtrlStrct_SmplCAN_BusInfo
 end
