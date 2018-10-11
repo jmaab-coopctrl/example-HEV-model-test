@@ -12,15 +12,15 @@
 
 % Model Variant Object
 
-VarObj_CtrlStruct_CAN_Simpl_TW =Simulink.Variant('CtrlStructType==0');
-VarObj_CtrlStruct_CAN_Simpl=Simulink.Variant('CtrlStructType==1');
+VarObj_CtrlStruct_CAN_Simpl=Simulink.Variant('CtrlStructType==0');
+VarObj_CtrlStruct_CAN_Simpl_TW =Simulink.Variant('CtrlStructType==1');
 VarObj_CtrlStruct_CAN_VNT_Level_1 =Simulink.Variant('CtrlStructType==2');
 VarObj_CtrlStruct_CAN_VNT_Level_2 =Simulink.Variant('CtrlStructType==3');
 
 %CtrlStructType=0;
 %CtrlStructType=1;
-%CtrlStructType=2;
-CtrlStructType=3;
+CtrlStructType=2;
+%CtrlStructType=3;
 %CtrlStructType=4;
 
 VarObj_CanType_Simpl_TW=Simulink.Variant('CAN_model_type==1');
@@ -30,8 +30,8 @@ VarObj_CanType_VNT_Level_2=Simulink.Variant('CAN_model_type==4');
 VarObj_CanType_VNT_CANoe=Simulink.Variant('CAN_model_type==5');
 
 %CAN_model_type=1;
-%CAN_model_type=2;
-CAN_model_type=3;
+CAN_model_type=2;
+%CAN_model_type=3;
 %CAN_model_type=4;
 
 VarObj_EngEcu_Simple =Simulink.Variant('EngEcuType==1');
