@@ -49,4 +49,7 @@ if CtrlStructType==3
     CtrlStrct_SmplCAN_BusInfo
 end
 
+% controller model default sampletime 
+sampletime = 1e-3;
+
 disp 'HevSimuVccWs_V1_PreLoad.m  VccWs HEV model PreLoad Normal End';
