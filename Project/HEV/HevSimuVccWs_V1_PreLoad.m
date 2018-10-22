@@ -50,6 +50,6 @@ if CtrlStructType==3
 end
 
 % controller model default sampletime 
-sampletime = 1e-3;
+sampletime = 1e-2;
 
 disp 'HevSimuVccWs_V1_PreLoad.m  VccWs HEV model PreLoad Normal End';
