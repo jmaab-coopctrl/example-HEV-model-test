@@ -19,8 +19,8 @@ VarObj_CtrlStruct_CAN_VNT_Level_2 =Simulink.Variant('CtrlStructType==3');
 
 %CtrlStructType=0;
 %CtrlStructType=1;
-CtrlStructType=2;
-%CtrlStructType=3;
+%CtrlStructType=2;
+CtrlStructType=3;
 %CtrlStructType=4;
 
 VarObj_CanType_Simpl=Simulink.Variant('CAN_model_type==0');
