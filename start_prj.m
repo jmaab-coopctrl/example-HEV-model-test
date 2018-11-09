@@ -13,9 +13,10 @@
 cd('Working');
 
 %% load configuration parameter
-load ConfigSet_Ctrl_MILS
-load ConfigSet_Plant_MILS_FixStep
-%load ConfigSet_Plant_MILS_VarStep
+Config_Ctrl_MILS
+Config_Ctrl_Module_MILS
+Config_Plant_MILS_FixStep
+%Config_Plant_MILS_VarStep
 
 %% ƒ‚ƒfƒ‹‚ðŠJ‚­
 HEV_Simu_V1_1;
