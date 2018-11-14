@@ -1,5 +1,6 @@
 % -------------------------------------------------------------------
-%  Modified from cs.set_param file
+%  Modified from cs.set_param file　Nishito
+%  プラントモデルのコンフィギュレーション参照からmファイルエクスポートができない対策
 %  MATLAB version: 9.4.0.949201 (R2018a) Update 6
 % -------------------------------------------------------------------
 Config_Plant = Simulink.ConfigSet;
