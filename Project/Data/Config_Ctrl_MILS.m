@@ -7,7 +7,7 @@
 Config_Ctrl = Simulink.ConfigSet;
 Config_Ctrl.set_param('Name', 'Config_Ctrl_MILS');
 Config_Ctrl.set_param('Description', ['制御モデル用Configurationパラメー' ...
-                       'タ', char(10), 'MILS用　固定ステップ　離散のみ']);
+                       'タ', newline, 'MILS用　固定ステップ　離散のみ']);
 Config_Ctrl.set_param('SystemTargetFile', 'grt.tlc');
 Config_Ctrl.set_param('HardwareBoard', 'None');
 Config_Ctrl.set_param('Solver', 'FixedStepDiscrete');
