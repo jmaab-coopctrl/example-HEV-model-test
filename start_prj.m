@@ -26,3 +26,8 @@ load ConfigSet_Plant_MILS_FixStep
 
 %% モデルを開く
 HEV_Simu_V1_1;
+
+%% GitHub 操作確認　2019/08/17
+%
+
+
