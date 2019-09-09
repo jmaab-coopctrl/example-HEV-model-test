@@ -25,7 +25,8 @@ load ConfigSet_Plant_MILS_FixStep
 %Config_Plant_MILS_VarStep
 
 %% モデルを開く
-HEV_Simu_V1_1;
+% HEV_Simu_V1_1;
+HEV_Simu_V1_1_PrjRef;
 
 %% GitHub 操作確認　2019/08/17
 % test
