@@ -17,6 +17,7 @@ load ConfigSet_Ctrl_MILS
 load ConfigSet_Ctrl_Module_MILS
 load ConfigSet_Plant_MILS_FixStep
 %load ConfigSet_Plant_MILS_VarStep
+load ConfigSet_Plant_MkSfunc_FIxStep
 
 %% load configuration parameter from m file
 %Config_Ctrl_MILS
@@ -26,9 +27,8 @@ load ConfigSet_Plant_MILS_FixStep
 
 %% モデルを開く
 % HEV_Simu_V1_1;
-HEV_Simu_V1_1_PrjRef;
+% HEV_Simu_V1_1_PrjRef;
+HEV_Simu_V1_1_SfuncPtbs;
 
-%% GitHub 操作確認　2019/08/17
-% test
 
 
