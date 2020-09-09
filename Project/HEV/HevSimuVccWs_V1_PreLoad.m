@@ -48,9 +48,10 @@ VarObj_Eng_MvMdl =Simulink.Variant('EngEcuType==2');
 
 % 　Vehicle Network ToolboxのTransmit/Receiveブロックを使った詳細CANモデルを
 %　初期状態で選択時、制御骨格モデルのコールバックPreLoad関数を実行する。
-if CtrlStructType==3
-    CtrlStrct_SmplCAN_BusInfo
-end
+% if CtrlStructType==3
+%     CtrlStrct_SmplCAN_BusInfo
+% end
+CtrlStrct_SmplCAN_BusInfo
 
 % controller model default sampletime 
 sampletime = 1e-2;

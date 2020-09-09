@@ -28,7 +28,7 @@ load ConfigSet_Plant_MkSfunc_FIxStep
 %% ƒ‚ƒfƒ‹‚ðŠJ‚­
 % HEV_Simu_V1_1;
 % HEV_Simu_V1_1_PrjRef;
-HEV_Simu_V1_1_SfuncPtbs;
-
+% HEV_Simu_V1_1_SfuncPtbs;
+HEV_Simu_V1_1c;
 
 
