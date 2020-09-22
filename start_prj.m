@@ -17,7 +17,7 @@ load ConfigSet_Ctrl_MILS
 load ConfigSet_Ctrl_Module_MILS
 load ConfigSet_Plant_MILS_FixStep
 %load ConfigSet_Plant_MILS_VarStep
-load ConfigSet_Plant_MkSfunc_FIxStep
+%load ConfigSet_Plant_MkSfunc_FIxStep
 
 %% load configuration parameter from m file
 %Config_Ctrl_MILS
